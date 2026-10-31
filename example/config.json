@@ -1,0 +1,9 @@
+{
+  "paths": ["/srv", "/etc"],
+  "exclude_file": "/etc/resticctl/excludes.txt",
+  "tags": ["homelab", "nas"],
+  "retention": {"daily": 7, "weekly": 4, "monthly": 6},
+  "prune_after_backup": true,
+  "verify_file": "etc/hostname",
+  "check_subset": "5%"
+}
